@@ -4,7 +4,7 @@ from botocore.exceptions import ClientError
 # Create EC2 client
 ec2 = boto3.client('ec2', region_name='ap-south-1')
 
-# Function to list all EC2 instances
+# Function to list all EC2 instances and their state
 def list_instances():
     try:
         response = ec2.describe_instances()
@@ -51,7 +51,7 @@ def create_instance():
     except ClientError as e:
         print(f"Error creating instance: {e}")
 
-# Main menu
+# Main function
 def main_menu():
     while True:
         print("\n===== EC2 Manager =====")
