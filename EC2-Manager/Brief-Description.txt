@@ -1,0 +1,1 @@
+EC2-Manager is a collection of Python scripts that manage AWS EC2 instances efficiently. These scripts cover tasks of creating, deleting and listing instances using Python and boto3.
